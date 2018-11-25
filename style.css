@@ -55,8 +55,7 @@ main {
     flex-wrap: wrap;
 }
 .logo {
-    padding: 3rem;
-    opacity: 0.5;
+    padding: 5rem;
     cursor: pointer;
 }
 
@@ -64,11 +63,56 @@ main {
     font-size: 7rem;
 }
 
-main .logo:first-child {
+main .front .logo {
+    opacity: 0.5;
+}
+
+main .back .logo {
+    background: black;
+    color: white;
     opacity: 1;
 }
 
-main .logo:hover {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 300px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+    position: relative;
+    text-align: center;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
 }
