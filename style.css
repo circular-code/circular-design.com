@@ -63,14 +63,13 @@ main {
     font-size: 7rem;
 }
 
-main .front .logo {
-    opacity: 0.5;
+.front {
+    color: gray
 }
 
 main .back .logo {
     background: black;
     color: white;
-    opacity: 1;
 }
 
 /* entire container, keeps perspective */
@@ -115,4 +114,82 @@ main .back .logo {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+}
+
+@keyframes changeColorRed {
+    0% {
+        color: gray;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+@keyframes changeColorGreen {
+    0% {
+        color: gray;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+@keyframes changeColorBlue {
+    0% {
+        color: gray;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes changeColorPurple {
+    0% {
+        color: gray;
+    }
+
+    100% {
+        color: purple;
+    }
+}
+
+main .front {
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.red .animatable.run {
+    animation-name: changeColorRed;
+}
+
+.green .animatable.run {
+    animation-name: changeColorGreen;
+}
+
+.blue .animatable.run {
+    animation-name: changeColorBlue;
+}
+
+.purple .animatable.run {
+    animation-name: changeColorPurple;
+}
+
+.red .back .logo {
+    background: red;
+}
+
+.green .back .logo {
+    background: green;
+}
+
+.blue .back .logo {
+    background: blue;
+}
+
+.purple .back .logo {
+    background: purple;
 }
