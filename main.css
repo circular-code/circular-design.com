@@ -155,9 +155,10 @@ body {
 
 .logo {
     width: 100%;
+    padding: 100px;
 }
 
-.logo svg *{
+#mainLogo svg *{
     fill: #000000!important;
 }
 
