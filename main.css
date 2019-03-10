@@ -144,6 +144,6 @@ main .front {
     background: purple;
 }
 
-svg * {
+.front svg * {
     fill: #909090!important;
 }
