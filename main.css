@@ -147,3 +147,12 @@ main .front {
 .front svg * {
     fill: #909090!important;
 }
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+}
