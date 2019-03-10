@@ -129,19 +129,19 @@ main .front {
 }
 
 .red .back .logo {
-    background: red;
+    /* background: red; */
 }
 
 .green .back .logo {
-    background: green;
+    /* background: green; */
 }
 
 .blue .back .logo {
-    background: blue;
+    /* background: blue; */
 }
 
 .purple .back .logo {
-    background: purple;
+    /* background: purple; */
 }
 
 .front svg * {
