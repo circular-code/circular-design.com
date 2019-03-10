@@ -4,8 +4,9 @@ main {
 }
 
 .logo {
-    padding: 5rem;
     cursor: pointer;
+    width: 100%;
+    padding: 75px;
 }
 
 .logo i {
@@ -17,7 +18,7 @@ main {
 }
 
 main .back .logo {
-    background: black;
+    background: #ffffff;
     color: white;
 }
 
@@ -151,11 +152,6 @@ main .front {
 body {
     max-width: 1024px;
     margin: 0 auto;
-}
-
-.logo {
-    width: 100%;
-    padding: 100px;
 }
 
 #mainLogo svg *{
