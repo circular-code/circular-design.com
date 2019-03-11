@@ -146,18 +146,60 @@ main .front {
 }
 
 .front svg * {
-    fill: #909090!important;
+    fill: #9898a5!important;
 }
 
 body {
-    max-width: 1024px;
-    margin: 0 auto;
+    /* max-width: 1024px;
+    margin: 0 auto; */
+    background: #81818a;
+    background: #81818a;
+    background: -moz-linear-gradient(top, #81818a 0%, #666666 100%);
+    background: -webkit-linear-gradient(top, #81818a 0%,#666666 100%);
+    background: linear-gradient(to bottom, #81818a 20%,#666666 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81818a', endColorstr='#666666',GradientType=0 );
 }
 
-#mainLogo svg *{
-    fill: #000000!important;
+#mainLogo svg * {
+    fill: #e8e8e8!important;
 }
 
 .logo svg {
     width: 100px;
+}
+
+h1#purpose {
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+    font-family: Roboto;
+    text-align: right;
+    display: inline-block;
+    width: calc(100% - 130px);
+    vertical-align: top;
+    margin-top: 13px;
+    width: 366px;
+    float: right;
+    text-align: right;
+}
+
+#mainLogo {
+    background: #81818a;
+    padding: 95px 95px 0px 95px;
+}
+
+#border {
+    width: 100%;
+    border-bottom: 1px solid #8b8d94;
+    margin-top: 88px;
+}
+
+[href*="race-devil"] svg > g > :first-child {
+    fill: #8e9fad;
+}
+[href*="race-devil"] svg > g > :nth-child(4) {
+    fill: #c30000;
+}
+[href*="race-devil"] svg > g > :nth-child(5) {
+    fill: #c30000;
 }
