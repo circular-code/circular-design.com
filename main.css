@@ -17,7 +17,14 @@ main .back .logo {
 
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 1000px;
+    perspective: 1000px;
+    border: none;
+    background: none;
+    align-items: initial;
+    text-align: initial;
+    cursor: pointer;
+    color: initial;
+    /* position: relative; */
 }
 
 /* flip the pane when hovered */
@@ -28,6 +35,10 @@ main .back .logo {
 .flip-container, .front, .back {
 	width: 300px;
 	height: 300px;
+}
+
+.flip-container:focus {
+    outline: none;
 }
 
 /* flip speed goes here */
@@ -42,8 +53,10 @@ main .back .logo {
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
+}
 
-	position: absolute;
+.back {
+    	position: absolute;
 	top: 0;
 	left: 0;
 }
@@ -99,7 +112,6 @@ body {
 h1#purpose {
     color: #000000;
     font-size: 27px;
-    font-family: Roboto;
     text-align: right;
     display: inline-block;
     width: calc(100% - 130px);
@@ -117,7 +129,6 @@ h1#purpose {
 h1#name {
     color: #000000;
     font-size: 49px;
-    font-family: Roboto;
     text-align: right;
     display: inline-block;
     width: calc(100% - 130px);
@@ -213,3 +224,7 @@ body .info-container svg {
     fill: #ffffff!important;
 }
 
+/* TODO: was besseres überlegen */
+.flip-container * {
+    pointer-events: none;
+}
