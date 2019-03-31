@@ -86,4 +86,4 @@ page.dom.main.addEventListener('click', function(e) {
     if (e.target && e.target.className && e.target.className.indexOf('flip-container') > -1) {
         e.target.parentNode.insertBefore(page.fn.createAdditionalInfo(page.data.details[e.target.dataset.name], e.target.dataset.name, undefined), e.target.nextSibling);
     }
-})
+});
