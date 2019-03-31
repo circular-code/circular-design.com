@@ -213,9 +213,6 @@ header {
     color: #4a4a4a;
 }
 
-body .info-container .left > :first-child {
-    background: #603C14;
-}
 body .info-container svg {
     width: 30%;
     min-width: 100px;
