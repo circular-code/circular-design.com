@@ -9,36 +9,29 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
-	<body class="is-preload">
+	<body>
 		<nav class="show">
-			<a class="scrolly" href="#portfolio">Portfolio</a>
-			<a class="scrolly" href="#contact">Contact</a>
-            <a class="scrolly" href="#services">Services</a>
-            <a class="scrolly" href="#contact">Get in Touch</a>
+			<a class="scroll" href="#portfolio">Portfolio</a>
+			<a class="scroll" href="#contact">Contact</a>
+            <a class="scroll" href="#services">Services</a>
+            <a class="scroll" href="#contact">Get in Touch</a>
 		</nav>
 		<div id="canvas"></div>
 		<main id="wrapper">
 			<section class="intro">
 				<header>
 					<h1>circular design</h1>
-					<p>brand identity development with <i class="fa fa-heart"></i></p>
-					<ul id="Category" class="actions">
-						<li><a href="#portfolio" class="arrow scrolly"><span class="label">Next</span></a></li>
-					</ul>
+					<p>brand identity development with <img height="12" src="icons/heart.svg" alt="heart icon"></p>
 				</header>
 				<div class="content">
 					<h3>In need of a passionate developer?</h3>
-					<p>With over 5 years of industry experience and a sophisticated level of proficiency, I can be your helping hand to achieve your next successfull project. <!--TODO: more personal statement--></p>
-					<ul id="cta" class="actions">
-						<li><a id="cta" href="#contact" class="button primary scrolly">Get in touch</a></li>
-						<li><a id="servicesLink" href="#services" class="button scrolly">View services</a></li>
-					</ul>
+					<p>With over 5 years of industry experience and a sophisticated level of proficiency, I can be your helping hand to achieve your next successfull project.</p>
 				</div>
             </section>
             <div id="portfolio" class="anchor"></div>
 			<section id="passionPodcast">
 				<header>
-					<a href="#experience" class="scrolly"><h2>Passion Podcast</h2></a>
+					<a href="#experience" class="scroll"><h2>Passion Podcast</h2></a>
 					<p>Work File 1/7</p>
 				</header>
 				<div class="content">
@@ -47,14 +40,14 @@
 			</section>
 			<section id="contact">
 				<header>
-					<a href="#contact" class="scrolly"><h2>Get in touch</h2></a>
+					<a href="#contact" class="scroll"><h2>Get in touch</h2></a>
 				</header>
 				<div class="content">
 					<form method="post" name="contact-form" data-netlify="true">
 						<div class="fields">
 							<div class="field half">
 								<label for="demo-name">Name</label>
-								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Your Name" />
+								<input required type="text" name="demo-name" id="demo-name" value="" placeholder="Your Name" />
 							</div>
 							<div class="field half">
 								<label for="demo-email">Email</label>
@@ -62,7 +55,7 @@
 							</div>
 							<div class="field">
 								<label for="demo-message">Message</label>
-								<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								<textarea required name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
 							</div>
 						</div>
 						<ul class="actions">
@@ -76,24 +69,9 @@
 		<footer>
 			Copyright 2020 circular-code. View <a href="imprint.html">imprint</a>, or <a href="privacy.html">privacy policy</a>
 		</footer>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/browser.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
 		<script src="js/scrollhighlight.js"></script>
-		<script src="js/breakpoints.min.js"></script>
-		<script src="js/util.js"></script>
 		<script src="js/main.js"></script>
-		<script async defer src="https://cdn.jsdelivr.net/gh/circular-code/connectedDots@master/app.js"></script>
-		<script>
-			// function waitForRunAnimation() {
-			// 	if (window.runAnimation)
-			// 		runAnimation(document.getElementById('canvas'), 3, 0.5, "rgba(0,0,0,0.5)", 0.1);
-			// 	else
-			// 		setTimeout(function() {
-			// 			waitForRunAnimation();
-			// 		}, 500);
-			// }
-			// document.addEventListener("DOMContentLoaded", waitForRunAnimation);
-		</script>
+		<script async defer src="https://cdn.jsdelivr.net/gh/circular-code/coloredWaves@master/app.js"></script>
 	</body>
 </html>
