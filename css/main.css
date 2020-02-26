@@ -57,7 +57,7 @@ input, select, textarea {
 	height: 100vh;
 }
 
-body #wrapper>section.intro>.content {
+body #wrapper>article.intro>.content {
 	position: relative;
 	padding-top: 22rem;
 }
@@ -435,57 +435,57 @@ body.is-preload #wrapper:before {
 	opacity: 0;
 }
 
-#wrapper>section.intro {
+#wrapper>article.intro {
 	-webkit-transition: opacity 1s ease;
 	transition: opacity 1s ease;
 	opacity: 1;
 }
 
-#wrapper>section.intro>header {
+#wrapper>article.intro>header {
 	-webkit-transition: -webkit-transform 1s ease;
 	transition: -webkit-transform 1s ease;
 	transition: transform 1s ease;
 	transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
-#wrapper>section.intro>.content {
+#wrapper>article.intro>.content {
 	-webkit-transition: -webkit-transform 1s ease;
 	transition: -webkit-transform 1s ease;
 	transition: transform 1s ease;
 	transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
-body.is-preload #wrapper>section.intro {
+body.is-preload #wrapper>article.intro {
 	opacity: 0;
 }
 
-body.is-preload #wrapper>section.intro>header {
+body.is-preload #wrapper>article.intro>header {
 	-webkit-transform: translateY(1rem);
 	transform: translateY(1rem);
 }
 
-body.is-preload #wrapper>section.intro>.content {
+body.is-preload #wrapper>article.intro>.content {
 	-webkit-transform: translateY(-1rem);
 	transform: translateY(-1rem);
 }
 
 @media screen and (max-width: 1280px) {
-	#wrapper>section.intro>header>* {
+	#wrapper>article.intro>header>* {
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		transition: opacity 1s ease, -webkit-transform 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease;
 	}
-	body.is-preload #wrapper>section.intro>header {
+	body.is-preload #wrapper>article.intro>header {
 		-webkit-transform: none;
 		transform: none;
 	}
-	body.is-preload #wrapper>section.intro>header>* {
+	body.is-preload #wrapper>article.intro>header>* {
 		-webkit-transform: translate(-0.5rem);
 		transform: translate(-0.5rem);
 		opacity: 0;
 	}
-	body.is-preload #wrapper>section.intro>.content {
+	body.is-preload #wrapper>article.intro>.content {
 		-webkit-transform: none;
 		transform: none;
 	}
